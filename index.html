@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warranty</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+
+    <!-- one page scroll -->
+    <!-- <link rel="stylesheet" href="./assets/styles/onepage-scroll.css"> -->
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--  main css -->
+    <link rel="stylesheet" href="./assets/styles/main.css">
+
+    <!-- cushrefm responsive css -->
+    <link rel="stylesheet" href="./assets/styles/responsive.css">
+
+
+
+    <!-- fav icon -->
+    <link rel="icon" href="./assets/img/Image_1@2x.png" type="image/gif" sizes="16x16">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header sticky-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div style="height: 60px; width: 60px; object-fit: contain;">
+                <img src="./assets/img/Image_1@2x.png" width="100%" height="100%" alt="Logo" />
+            </div>
+            <div>
+                <ul class="d-lg-flex d-none">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/category">Warrenty Description</a>
+                    </li>
+                    <li>
+                        <a href="/authors">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/about">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="/login">Login / Register</a>
+                    </li>
+                </ul>
+                <button id="mobile-menu-btn" class="d-lg-none btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <div id="mobile-menu" class="hide mobile-menu">
+                    <ul class="d-flex flex-column align-items-center justify-content-around h-100">
+                        <li class="ml-0">
+                            <a href="/">Home</a>
+                        </li>
+                        <li class="ml-0">
+                            <a href="/category">Categories</a>
+                        </li>
+                        <li class="ml-0">
+                            <a href="/authors">Authors</a>
+                        </li>
+                        <li class="ml-0">
+                            <a href="/about">About Us</a>
+                        </li>
+                        <li class="ml-0">
+                            <a href="/login">Login / Register</a>
+                        </li>
+                        <div id="mobile-menu-close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- main -->
+    <main class="index-main">
+        <section class="index-main__top position-relative">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center">
+                <div class="d-flex flex-column pt-lg-0 pt-3 resp1">
+                    <div class="mb-4">
+                        <h1>Phone Protection</h1>
+                    </div>
+                    <div class="mb-4">
+                        <ul class="ul--styled text-muted--custom pl-3"
+                            style="font-size: 1.42em; line-height: 1.5em; opacity: .6;">
+                            <li>Covers accidents</li>
+                            <li>Protect any phone, old or new</li>
+                            <li>Continous coverage when you upgrade phones</li>
+                        </ul>
+                    </div>
+                    <div class="text-muted--custom" style="font-size: 1.42em; line-height: 1.5em;">
+                        Risk-free, cancel anytime
+                    </div>
+                </div>
+                <div class="d-flex align-items-center flex-column flex-lg-row resp2 mb-5 mt-4 pb-3">
+                    <div
+                        class="index-main__plan-card mr-lg-4 d-flex flex-column align-items-center justify-content-between pt-3">
+                        <div class="index-main__plan-card__title">
+                            Family Plan
+                        </div>
+                        <div class="text-center">
+                            <div class="index-main__plan-card__no d-flex align-items-center">
+                                <div id="increase-f" class="card__nubmber-btn">+</div>
+                                <div>
+                                    <span>$</span>
+                                    <span id="money-big-f"> 19</span>
+                                    <span id="money-little-f">.99</span>
+                                </div>
+                                <div id="decrease-f" class="card__nubmber-btn">-</div>
+                            </div>
+                            <div>
+                                covers up to <span id="number-f" class="font-weight-bold">4</span> phones
+                            </div>
+                        </div>
+                        <div style="width: 150px;">
+                            <img src="./assets/img/vectore.svg" width="100%" alt="">
+                        </div>
+                        <div id="first-input" class="flex flex-column mt-3 hide" style="width: 90%;">
+                            <div class="input-container position-relative">
+                                <input id="phone1" class="input--custom" placeholder="0989102119118" type="tel">
+                                <label for="phone1" id="phone1-label" class="input-label--custom">Phone No.</label>
+                            </div>
+                            <div class="input-container position-relative">
+                                <input id="email1" class="input--custom" placeholder="a.baghshahi@yahoo.com"
+                                    type="email">
+                                <label for="" class="input-label--custom">Email</label>
+                            </div>
+                        </div>
+                        <div id="fitst-input-btn" class="index-main__plan-card__btn d-flex w-100">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="10" cy="20.5" r="1" />
+                                    <circle cx="18" cy="20.5" r="1" />
+                                    <path d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1" />
+                                </svg>
+                            </span>
+                            <span id="firtst-input-btn-text" class="ml-2">
+                                Buy protection
+                            </span>
+                        </div>
+                    </div>
+                    <div
+                        class="index-main__plan-card mr-lg-4 d-flex flex-column align-items-center justify-content-between pt-3">
+                        <div class="index-main__plan-card__title">
+                            Single Plan
+                        </div>
+                        <div class="text-center">
+                            <div class="index-main__plan-card__no d-flex align-items-center ">
+                                <div id="increase" class="card__nubmber-btn">+</div>
+                                <div>
+                                    <span>$</span>
+                                    <span id="money-big"> 8</span>
+                                    <span id="money-little">.99</span>
+                                </div>
+                                <div id="decrease" class="card__nubmber-btn">-</div>
+
+                            </div>
+                            <div>
+                                <span id="number" class="font-weight-bold">1</span>
+                                <span id="users"> user</span> / month
+                            </div>
+                        </div>
+                        <div style="width: 150px;">
+                            <img src="./assets/img/undraw_personalization_triu.svg" width="100%" alt="">
+                        </div>
+                        <div id="second-input" class="flex flex-column mt-3 hide" style="width: 90%;">
+                            <div class="input-container position-relative">
+                                <input id="phone2" class="input--custom" placeholder="0989102119118" type="tel">
+                                <label for="phone2" id="phone1-label" class="input-label--custom">Phone No.</label>
+                            </div>
+                            <div class="input-container position-relative">
+                                <input id="email2" class="input--custom" placeholder="a.baghshahi@yahoo.com"
+                                    type="email">
+                                <label for="" class="input-label--custom">Email</label>
+                            </div>
+                        </div>
+                        <div id="second-input-btn" class="index-main__plan-card__btn d-flex w-100">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="10" cy="20.5" r="1" />
+                                    <circle cx="18" cy="20.5" r="1" />
+                                    <path d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1" />
+                                </svg>
+                            </span>
+                            <span id="second-input-btn-text" class="ml-2">
+                                Buy protection
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- curve -->
+            <div class="d-none d-lg-block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1923.146" viewBox="0 0 1923.146 109.303"
+                    style="width: 100%; position: absolute; bottom: -1px;transform: rotate(180deg);">
+                    <path id="Path_1" data-name="Path 1" d="M0,0C974.5,243.625,1922.9,0,1922.9,0"
+                        transform="translate(0.121 0.485)" fill="white" stroke="" stroke-width=""></path>
+                </svg>
+                <div style="
+                text-align: center;
+                position: absolute;
+                width: 100%;bottom: 15px;">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480 480"
+                        style="enable-background:new 0 0 480 480;width: 20px;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path
+                                    d="M240,0C156.091,0.093,88.093,68.091,88,152v176c0,83.947,68.053,152,152,152s152-68.053,152-152V152    C391.907,68.091,323.909,0.093,240,0z M256,80v48c0,8.837-7.163,16-16,16s-16-7.163-16-16V80c0-8.837,7.163-16,16-16    S256,71.163,256,80z M104,152c0.119-71.926,56.2-131.333,128-135.592v32.728C217.915,52.773,208.055,65.453,208,80v48    c0.055,14.547,9.915,27.227,24,30.864V192H104V152z M376,328c-0.084,75.076-60.924,135.916-136,136    c-75.076-0.084-135.916-60.924-136-136V208h272V328z M376,192H248v-33.136c14.086-3.637,23.945-16.317,24-30.864V80    c-0.055-14.547-9.914-27.227-24-30.864V16.408C319.8,20.667,375.881,80.074,376,152V192z">
+                                </path>
+                            </g>
+                        </g>
+
+                    </svg>
+                    <div class="dots">
+                        <div>
+                            .
+                        </div>
+                        <div>
+                            .
+                        </div>
+                        <div>
+                            .
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What is it & How it works? -->
+        <section class="index-main__how" data-aos="fade-right" data-aos-offset="250" data-aos-delay="100">
+            <div class="container d-flex justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1>What is it & How it works?</h1>
+                    <p class="text-muted--custom">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+
+                    </p>
+                    <div data-aos="fade-right" style="max-width: 650px;">
+                        <img src="./assets/img/Product-teardown-pana.svg" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- blue line -->
+        <section class="index-main__blue">
+            <div class="container d-flex flex-wrap py-5 justify-content-center align-items-center">
+                <div data-aos="fade-down-left" data-aos-offset="50"
+                    class="d-flex flex-column justify-content-center align-items-center mx-5 mb-5 mb-md-0">
+                    <div style="width: 100px; height: 100px;">
+                        <img src="./assets/img/logo.svg" width="100%" height="100%" alt="">
+                    </div>
+                    <div class="mt-3">Upgrade your phone</div>
+                </div>
+                <div data-aos="fade-down" data-aos-offset="50"
+                    class="d-flex flex-column justify-content-center align-items-center mx-5 mb-5 mb-md-0">
+                    <div style="width: 100px; height: 100px;">
+                        <img src="./assets/img/logo-1.svg" width="100%" height="100%" alt="">
+                    </div>
+                    <div class="mt-3">Protect your phone</div>
+                </div>
+                <div data-aos="fade-down-right" data-aos-offset="50"
+                    class="d-flex flex-column justify-content-center align-items-center mx-5">
+                    <div style="width: 100px; height: 100px;">
+                        <img src="./assets/img/logo-4.svg" width="100%" height="100%" alt="">
+                    </div>
+                    <div class="mt-3">Save your money</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Description -->
+        <section class="index-main__des mb-5 pb-4">
+            <div class="container">
+                <div class="px-lg-5 text-center" data-aos="fade-left" data-aos-offset="50">
+                    <h1>Detailed warranty description page</h1>
+                    <p class="text-muted--custom px-lg-5 mx-lg-5 mx-2">
+                        How does our warranty system work and how does it differ from other regular warranties? And why
+                        do we have to change our warranty?
+                    </p>
+                </div>
+            </div>
+
+            <!-- teble -->
+            <div class="container">
+                <table class="table--custom table d-none d-lg-block">
+                    <thead>
+                        <tr>
+                            <td class="border-0">Traditional Warranty</td>
+                            <td class="border-0">Our Warranty</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border-right position-relative">
+                                <div>
+                                    <img src="./assets/img/fig1.svg" data-aos="zoom-in" data-aos-offset="100"
+                                        data-aos-delay="0" width="80%" alt="">
+                                </div>
+                                <div class="badge">
+                                    During the term
+                                </div>
+                            </td>
+                            <td class="border-right position-relative">
+                                <div>
+                                    <img src="./assets/img/fig1.svg" data-aos="zoom-in" data-aos-offset="100"
+                                        data-aos-delay="0" width="80%" alt="">
+                                </div>
+                                <div class="badge">
+                                    During the term
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border-right position-relative">
+                                <div>
+                                    <div data-aos="zoom-in"
+                                        style="font-size: 3em; font-weight: bolder; color: #779BE7;padding: 100px 0 60px 0;">
+                                        Void Warranty
+                                    </div>
+                                </div>
+                                <div class="badge badge--green">
+                                    When you upgrade </br> your phone
+                                </div>
+                            </td>
+                            <td class="border-right position-relative">
+                                <div>
+                                    <img src="./assets/img/fig2.svg" data-aos="zoom-in" data-aos-offset="100"
+                                        data-aos-delay="0" width="80%" alt="">
+                                </div>
+                                <div class="badge badge--green">
+                                    When you upgrade </br> your phone
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- mobile table -->
+                <div class="d-lg-none">
+                    <div class="mobile-table d-flex flex-column align-items-center">
+                        <div class="mobile-table__header">
+                            Traditional Warranty
+                        </div>
+                        <div class="position-relative">
+                            <div class="mobile-table__img">
+                                <img src="./assets/img/fig1.svg" width="80%" alt="">
+                            </div>
+                            <div class="badge">
+                                During the term
+                            </div>
+                        </div>
+                        <div class="mobile-table__header border-top">
+                            Traditional Warranty
+                        </div>
+                        <div class="position-relative">
+                            <div class="mobile-table__img">
+                                <img src="./assets/img/fig1.svg" width="80%" alt="">
+                            </div>
+                            <div class="badge">
+                                During the term
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-table d-flex flex-column align-items-center my-5">
+                        <div class="mobile-table__header">
+                            Traditional Warranty
+                        </div>
+                        <div class="position-relative">
+                            <div class="mobile-table__img">
+                                <div data-aos="zoom-in"
+                                    style="font-size: 3em; font-weight: bolder; color: #779BE7;padding: 100px 0 60px 0;">
+                                    Void Warranty
+                                </div>
+                            </div>
+                            <div class="badge badge--green">
+                                When you upgrade</br> your phone
+                            </div>
+                        </div>
+                        <div class="mobile-table__header border-top">
+                            Traditional Warranty
+                        </div>
+                        <div class="position-relative">
+                            <div class="mobile-table__img">
+                                <img src="./assets/img/fig2.svg" width="80%" alt="">
+                            </div>
+                            <div class="badge badge--green">
+                                When you upgrade</br> your phone
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <!-- comments -->
+        <section class="index-main__comment">
+            <div class="container">
+                <div class="px-lg-5 text-center" data-aos="fade-down-left" data-aos-offset="0">
+                    <h1>Detailed warranty description page</h1>
+                    <p class="text-muted--custom px-lg-5 mx-lg-5 mx-2 mb-5 mt-3" style="opacity: .6;">
+                        How does our warranty system work and how does it differ from other regular warranties? And why
+                        do we have to change our warranty?
+                    </p>
+                </div>
+
+                <div
+                    class="index-main__comment__List d-flex flex-column flex-wrap flex-lg-row justify-content-between align-self-center">
+                    <div class="index-main__comment__List__single" data-aos="zoom-out-up">
+                        <img src="./assets/img/profile.png" alt="">
+                        <div class="d-flex flex-column">
+                            <h6>
+                                Michel Chamber
+                            </h6>
+                            <p class="mt-2">
+                                We and our partners use technologies, such as cookies, and process personal data,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="index-main__comment__List__single" data-aos="zoom-out-up">
+                        <img src="./assets/img/profile.png" alt="">
+                        <div class="d-flex flex-column">
+                            <h6>
+                                Michel Chamber
+                            </h6>
+                            <p class="mt-2">
+                                We and our partners use technologies, such as cookies, and process personal data,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="index-main__comment__List__single" data-aos="zoom-out-up">
+                        <img src="./assets/img/profile.png" alt="">
+                        <div class="d-flex flex-column">
+                            <h6>
+                                Michel Chamber
+                            </h6>
+                            <p class="mt-2">
+                                We and our partners use technologies, such as cookies, and process personal data,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="index-main__comment__List__single" data-aos="zoom-out-up">
+                        <img src="./assets/img/profile.png" alt="">
+                        <div class="d-flex flex-column">
+                            <h6>
+                                Michel Chamber
+                            </h6>
+                            <p class="mt-2">
+                                We and our partners use technologies, such as cookies, and process personal data,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="index-main__comment__List__single" data-aos="zoom-out-up">
+                        <img src="./assets/img/profile.png" alt="">
+                        <div class="d-flex flex-column">
+                            <h6>
+                                Michel Chamber
+                            </h6>
+                            <p class="mt-2">
+                                We and our partners use technologies, such as cookies, and process personal data,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="index-main__comment__List__single" data-aos="zoom-out-up">
+                        <img src="./assets/img/profile.png" alt="">
+                        <div class="d-flex flex-column">
+                            <h6>
+                                Michel Chamber
+                            </h6>
+                            <p class="mt-2">
+                                We and our partners use technologies, such as cookies, and process personal data,
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top flex-column flex-lg-row">
+                <div class="d-flex flex-column col-lg-4 align-items-center align-items-lg-start">
+                    <h1 class="text-white font-weight-bold text-center text-lg-left">
+                        Are you ready to get started?
+                    </h1>
+                    <div class="mt-3">
+                        <button class="btn btn--blue font-weight-bold">Login / Sign Up</button>
+                    </div>
+                    <div class="mt-5">
+                        <div class="text-center" style="font-weight: lighter; font-size: .9em;">
+                            Would you like to receive news and deals?
+                        </div>
+                        <button class="mt-2 btn btn-outline--blue font-weight-bold">Newsletter</button>
+                    </div>
+                </div>
+                <div class="d-flex flex-column col-lg-3 align-items-center align-items-lg-start pt-4"
+                    style="font-size: .8em;">
+                    <div class="d-flex align-items-center">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#8390aa" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="ml-2">
+                            +98 910-211-9118
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-4">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#8390aa" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="10" r="3" />
+                                <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z" /></svg>
+                        </div>
+                        <div class="ml-2">
+                            3728 Vineland Rd.
+                            <br />
+                            Orlando, Florida, 32811
+                        </div>
+                    </div>
+                    <div class="map mt-3">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.217531114614!2d-81.43307588535922!3d28.50310228246904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e779568c6666f9%3A0xa8127738783af209!2s3728%20Vineland%20Rd%2C%20Orlando%2C%20FL%2032811%2C%20USA!5e0!3m2!1sen!2s!4v1592124942594!5m2!1sen!2s"
+                            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom justify-content-center flex-column">
+                <div class="d-none d-lg-block" style="font-size: .7em;">
+                    <ul class="d-flex align-self-center">
+                        <a href="#">
+                            <li>Home</li>
+                        </a>
+                        <a href="#">
+                            <li>Warranty description</li>
+                        </a>
+                        <a href="#">
+                            <li>FAQ</li>
+                        </a>
+                        <a href="#">
+                            <li>About us</li>
+                        </a>
+                        <a href="#">
+                            <li>Contact us</li>
+                        </a>
+                    </ul>
+                </div>
+                <div style="font-size: .6em; margin-top: 5em;">
+                    All rights reserved for this site under the same brand name and are copyrighted.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- pre loader -->
+    <div class="pre-loader">
+        <img src="./assets/img/Preloader_2.gif" width="75px" height="75px" alt="">
+    </div>
+
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <!-- scroll -->
+    <!-- <script src="./assets/js/jquery.onepage-scroll.min.js"></script> -->
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- cushrefm js -->
+    <script src="./assets/js/main.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+</body>
+
+</html>

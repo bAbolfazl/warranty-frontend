@@ -1,0 +1,77 @@
+/* lg */
+
+/* min */
+@media only screen and (min-width: 992px) {
+  .resp1 {
+    max-width: 40%;
+  }
+}
+/* max */
+@media only screen and (max-width: 992px) {
+  main > .container-fluid {
+    padding: 50px 0 !important;
+  }
+  .index-main__comment {
+    padding: 30px 0;
+  }
+  .resp1 {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  .resp2 {
+    width: 100%;
+    text-align: center;
+    /* margin-top: 40px; */
+  }
+  .index-main__plan-card {
+    margin: 15px 0;
+  }
+
+  .index-main__plan-card__btn {
+    background-color: #3b3367;
+  }
+  .index-main__plan-card {
+    border: solid 1px #3b3367;
+  }
+
+  .header {
+    height: 60px;
+  }
+  .index-main__top {
+    padding: 0;
+  }
+  .index-main__how {
+    padding: 50px 0 80px 0;
+  }
+  .index-main__blue {
+    margin-bottom: 35px;
+  }
+  .faq-cont {
+    width: 100%;
+    margin: 70px auto;
+  }
+  .faq__single__title {
+    font-size: 1em;
+  }
+  .faq__single__img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* md */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+/* 1000 px */
+
+/* max */
+@media only screen and (max-width: 1200px) {
+  .index-main__plan-card {
+    width: 250px;
+  }
+}
